@@ -1,0 +1,30 @@
+body{
+    font-family: Tahoma;
+    font-size: 40px;
+}
+div.container{
+    display: flex;
+    flex-direction: row;
+    color:black;
+    align-items: top;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+}
+.container > div{
+    height: 150px;
+    width: 100px;
+    white-space: nowrap;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    padding-left: 10px;
+}
+.container > div.c3{
+    margin-left: auto;
+    align-self: flex-end;
+}
+.container > div:hover{
+    background-color: yellow;
+    color:goldenrod;
+}
