@@ -1,0 +1,58 @@
+body{
+    font-family: 'Times New Roman', Times, serif,
+}
+h1{
+    background-color: aqua;
+    border:5px blue solid;
+    text-align: center;
+}
+table.calender{
+    width: 90vw;
+    height: 50vh;
+    border: 2px solid black;
+}
+table.calender > caption{
+    background-color: blueviolet;
+    height: 5vh;
+    text-align: center;
+    font-size: 30px;
+}
+th{
+    border: 2px solid red;
+    background-color: yellow;
+}
+tr{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+    font-size: 30px;
+}
+td.rightmonth{
+    background-color: bisque;
+}
+td.lastmonth{
+    background-color: dimgray;
+}
+td.nextmonth{
+    background-color: greenyellow;
+}
+td.chosenday{
+    background-color: gold;
+}
+div.controlRow{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    font-size: 20px;
+}
+.controlRow > div{
+    border: 1px solid;
+    background-color: aquamarine;
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    align-content: center;
+}
