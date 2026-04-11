@@ -19,7 +19,7 @@ Cs142TemplateProcessor.prototype.fillIn = function(ele){
     }
     return null;
 };
-//*------------------------------test sample
+// // *------------------------------test sample
 // var template = "My favorite month is {{month}} but not the day {{day}} or the year {{year}}";
 // var dateTemplate = new Cs142TemplateProcessor(template);
 
