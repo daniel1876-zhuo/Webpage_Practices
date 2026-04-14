@@ -21,11 +21,13 @@ class Example extends React.Component {
     // Components have a special property named "state" that holds state. We can
     // initialize it here. We read the example model data into the state
     // variable 'name'.
+    const modelData = window.cs142models.exampleModel();
     this.state = {
-      name: window.cs142models.exampleModel().name,
+      name: modelData.name,
       counter: 0,
       inputValue: "",
       buttonWasClicked: "",
+      motto: modelData.motto,
     };
 
     // React events are called directly from DOM event handlers so we cannot
@@ -35,6 +37,7 @@ class Example extends React.Component {
     // Note: A commmon idiom in React code is to use JavaScript bind() to smash
     // the method to accomplish this passthrough to the method:
     //      this.handleChange = this.handleChange.bind(this);
+    this.handleMottoChange = this.handleMottoChange.bind(this);
   }
 
   // React components have several "lifecycle functions"
@@ -96,6 +99,9 @@ class Example extends React.Component {
 
     return retVal;
   }
+  handleMottoChange(event){
+    this.setState({motto:event.target.value});
+  }
 
   render() {
     return (
@@ -104,6 +110,8 @@ class Example extends React.Component {
 
         <div className="motto-update">
           {/* Your Problem 1 motto displaying and updating widget goes here */}
+          {this.state.name}'s motto is: 
+          "<input className="mottoChangeInput" type="text" value={`${this.state.motto}`} onChange={this.handleMottoChange}></input>"
         </div>
 
         <p>
@@ -179,7 +187,7 @@ class Example extends React.Component {
         </pre>
         <p>should render as:</p>
         <p className="cs142-example-output">
-          My name is &ldquo; {this.state.name} &rdquo;.
+          My name is &ldquo; "{this.state.name}" &rdquo;.
         </p>
 
         <h3>One-way binding from JavaScript to HTML</h3>

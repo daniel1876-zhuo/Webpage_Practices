@@ -33,3 +33,13 @@
 .cs142-code-name {
   font-family: Courier New, monospace;
 }
+
+.motto-update {
+  background-color: aquamarine;
+  padding: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+.mottoChangeInput {
+  background-color: bisque;
+}
