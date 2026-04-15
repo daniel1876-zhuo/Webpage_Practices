@@ -4,3 +4,15 @@
  * Since CSS uses a global name space for classes we should use names starting
  * with "cs142-states-" here.
  */
+.statesFinder{
+    font-family: 'Times New Roman', Times, serif;
+}
+.statesInput{
+    padding: auto;
+    background-color: aquamarine;
+}
+.statesList{
+    padding: 10px;
+    background-color: bisque;
+    width: 20vw;
+}
