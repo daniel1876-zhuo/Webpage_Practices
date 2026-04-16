@@ -12,7 +12,8 @@
     background-color: aquamarine;
 }
 .statesList{
-    padding: 10px;
+    border: solid aquamarine 3px;
+    padding:5%;
     background-color: bisque;
-    width: 20vw;
+    width: 20%;
 }

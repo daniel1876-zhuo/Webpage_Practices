@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import Header from "./components/Header";
 import States from "./components/States";
 
-ReactDOM.render(<States />, document.getElementById("reactapp"));
+ReactDOM.render(
+    <>
+        <Header/>
+        <States/>
+    </>, 
+    document.getElementById("reactapp")
+);
