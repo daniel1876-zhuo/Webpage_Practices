@@ -6,6 +6,7 @@
  */
 .statesFinder{
     font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
 }
 .statesInput{
     padding: auto;
@@ -13,7 +14,8 @@
 }
 .statesList{
     border: solid aquamarine 3px;
-    padding:5%;
+    padding:2%;
     background-color: bisque;
-    width: 20%;
+    width: 15%;
+    font-size:15px;
 }
