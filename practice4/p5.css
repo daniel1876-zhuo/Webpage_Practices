@@ -1,0 +1,11 @@
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+.button {
+    margin:auto;
+    background-color: aqua;
+    padding: 5px;
+    margin-top:10px;
+}
